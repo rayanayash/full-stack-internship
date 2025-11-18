@@ -1,2 +1,2 @@
-# Full Stack Internship - Task 1
+# Full Stack Internship 
 This repository contains my environment setup for the internship.
