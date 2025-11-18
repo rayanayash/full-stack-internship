@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form input {
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
+
+#searchInput {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#usersList div {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background 0.5s;
+}
+
+#usersList .highlight {
+    background-color: #d4edda; /* Green for added/updated */
+}
+
+#usersList button {
+    margin-left: 5px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#usersList button.edit {
+    background-color: #007bff;
+    color: white;
+}
+
+#usersList button.edit:hover {
+    background-color: #0069d9;
+}
+
+#usersList button.delete {
+    background-color: #dc3545;
+    color: white;
+}
+
+#usersList button.delete:hover {
+    background-color: #c82333;
+}
+#searchInput {
+    padding: 12px 20px;           /* More padding for comfort */
+    margin-bottom: 20px;
+    border-radius: 25px;          /* Rounded pill shape */
+    border: 1px solid #ccc;
+    width: 93%;
+    align-items: center;
+    font-size: 16px;              /* Slightly larger text */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow */
+    transition: all 0.3s ease;    /* Smooth hover/focus effect */
+    background-color: #f9f9f9;   /* Slightly off-white background */
+}
+
+/* Change border and background on focus */
+#searchInput:focus {
+    outline: none;
+    border: 1px solid #007bff;
+    background-color: #fff;
+}
+
+/* Placeholder styling */
+#searchInput::placeholder {
+    color: #888;
+    font-style: italic;
+}
